@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RNboard</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+    	<div class="wrapper">
+		  	<header class="header">
+		  		<div class="logo"><a href="index.html">RNboard</a></div>
+		  		<ul class="navbar">
+		  			<li class="nav-item"><a href="elements.html">Elements</a></li>
+		  			<li class="nav-item"><a href="#">Components</a></li>
+		  			<li class="nav-item"><a href="#">Layouts</a></li>
+		  			<li class="nav-item"><a href="#">Drafts</a></li>
+		  			<li class="nav-item"><a href="#">Documentation</a></li>
+		  		</ul>
+		  	</header>
+		  	<div class="sidebar-container">
+	  			<div class="sidebar">
+	  				<ul class="sidebar">
+		  				<li class="sidebar-item"><a href="#Chevron menu">chevron menu</a></li>
+		  				<li class="sidebar-item"><a href="#Dropdown menu">dropdown menu</a></li>
+		  				<li class="sidebar-item"><a href="#Modal box">modal box</a></li>
+		  				<li class="sidebar-item"><a href="#Allerts">allerts</a></li>
+	  				</ul>
+	  			</div>
+		  		<main class="content">
+		  			<div class="heading">
+		  				<h2 id="Chevron menu">Chevron menu</h2>
+		  			</div>
+		  			<div class="box-md-upper">
+		  				<img src="img/info.svg" class="info">
+		  				<div class="information">
+			  				<span class="text">Possible to use on gradient background</span>
+							<span class="text">Easy to use opacity for items background</span>
+							<span class="text">Cross-browser</span>
+						</div>
+		  			</div>
+		  			<div class="chevron">
+		  				<nav class="nav gradient">
+						  <ul class="nav-list">
+						    <li class="nav-item">
+						      <a href="#">about</a>
+						    </li>
+						    <li class="nav-item">
+						      <a href="#">careers</a>
+						    </li>
+						    <li class="nav-item">
+						      <a href="#">faq</a>
+						    </li>
+						    <li class="nav-item">
+						      <a href="#">contact</a>
+						    </li>
+						  </ul>
+						</nav>
+		  			</div>
+		  			<div class="box-container">
+		  				<fieldset class="fieldset-html">
+    						<legend align="left">HTML</legend>
+			  				<div class="box-md">
+	<pre class="code-text">
+		&lt;div class="chevron"&gt;
+			&lt;nav class="nav gradient"&gt;
+				&lt;ul class="nav-list"&gt;
+					&lt;li class="nav-item"&gt;
+						&lt;a href="#"&gt;about&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class="nav-item"&gt;
+						&lt;a href="#"&gt;careers&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class="nav-item"&gt;
+						&lt;a href="#"&gt;faq&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class="nav-item"&gt;
+						&lt;a href="#"&gt;contact&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/nav&gt;
+		&lt;/div&gt;
+	</pre>
+			  				</div>
+			  			</fieldset>
+			  			<fieldset class="fieldset-css">
+    						<legend align="left">CSS</legend>
+			  				<div class="box-md">
+	<pre class="code-text">
+		.chevron {
+		  width: 1104px;
+		  margin: 0 48px 48px;
+		}
+		.chevron .nav.gradient {
+		  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+		  padding: 2px 0;
+		}
+		.chevron .nav-list {
+		  text-align: right;
+		  padding: 0;
+		  margin: 0;
+		}
+		.chevron .nav-item {
+		  display: inline-block;
+		  vertical-align: top;
+		  margin: 0 50px 0 0;
+		  font-family: Helvetica, Arial, sans-serif;
+		  font-size: 32px;
+		  line-height: 37px;
+		}
+		.chevron .nav-item a {
+		  color: #000;
+		  background: rgba(255, 255, 255, 1);
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  padding: 30px 25px 29px 25px;
+		  display: inline-block;
+		  position: relative;
+		}
+		.chevron .nav-item a:before {
+		  content: "";
+		  display: block;
+		  position: absolute;
+		  left: -25px;
+		  top: 0;
+		  width: 0;
+		  height: 0;
+		  border-style: solid;
+		  border-width: 48px 0 48px 25px;
+		  border-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) transparent;
+		}
+		.chevron .nav-item a:after {
+		  content: "";
+		  display: block;
+		  position: absolute;
+		  right: -25px;
+		  top: 0;
+		  width: 0;
+		  height: 0;
+		  border-style: solid;
+		  border-width: 48px 0 48px 25px;
+		  border-color: transparent transparent transparent rgba(255, 255, 255, 1); 
+		}
+		.chevron .nav-item:hover a {
+		  background: rgba(255, 255, 255, 0.7);
+		}
+		.chevron .nav-item:hover a:after {
+		  border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+		}
+		.chevron .nav-item:hover a:before {
+		  border-color: rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7) transparent;
+		}
+	</pre>
+			  				</div>
+			  			</fieldset>
+		  			</div>	
+		  		</main>
+	  		</div>	  		
+	  	</div>
+  	</body>
+</html>
